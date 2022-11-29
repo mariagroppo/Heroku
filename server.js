@@ -6,7 +6,7 @@ import passport from 'passport';
 import router from './src/routes/products.js';
 import routerCart from './src/routes/cart.js';
 import routerAuth from "./src/routes/routerAuth.js";
-app.use('/productos', router);
+app.use('/api/productos', router);
 app.use('/api/cart', routerCart);
 app.use('/api/auth', routerAuth);
 app.use(express.static("src/public"));
